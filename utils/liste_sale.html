@@ -31,13 +31,20 @@
 
     <h1>Liste de recettes salées</h1>
     
-    <ul>
-        <li>Wrap</li>
-        <li>Mille-feuilles de pommes de terre</li>
-        <li>Cheese nan</li>
-        <li>Gyoza</li>
-        <li>Nems</li>
-    </ul>
+    <p id="demo"></p>
+    
+    <script>
+    const cars = ["BMW", "Volvo", "Saab", "Ford"];
+    let i = 2;
+    let len = cars.length;
+    let text = "";
+    
+    for (; i < len; i++) {
+      text += cars[i] + "<br>";
+    }
+    
+    document.getElementById("demo").innerHTML = text;
+    </script>
     
 </body>
 </html>
