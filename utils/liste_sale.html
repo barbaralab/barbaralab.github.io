@@ -26,10 +26,15 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
+    <script>
+      $(function() {
+         $("#includeHtml").load("salt.html");
+      });
+    </script>
 </head>
 <body>
 
     <h1>Liste de recettes salées</h1>
-    <div w3-include-html="salt.html"></div>
+    <div id="includeHtml"></div>
 </body>
 </html>
